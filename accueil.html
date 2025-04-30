@@ -27,9 +27,10 @@
 </head>
 <body class="bg-orange-50 text-slate-900 font-sans">
   <!-- Menu haut classique -->
-  <nav class="bg-orange-200 text-slate-900 px-6 py-4 flex justify-between items-center shadow-md">
+  <!-- Menu haut classique -->
+  <nav class="bg-orange-200 text-slate-900 px-6 py-4 flex justify-between items-center shadow-md fixed top-0 left-0 right-0 z-50">
     <div class="flex items-center space-x-3">
-      <img src="SimplonCoffeeCraft.png" alt="Logo Simplon Coffee Craft" class="h-10 w-auto">
+      <img src="SimplonCoffeeCraft.png" alt="Logo Simplon Coffee Craft" class="h-12 w-auto">
       <span class="text-xl font-bold">Simplon Coffee Craft</span>
     </div>
     <div class="space-x-6 text-sm md:text-base">
@@ -42,7 +43,7 @@
   </nav>
 
   <!-- Titre en arc -->
-  <header class="pt-10 text-center px-4">
+  <header class="pt-40 text-center px-4">
     <h1 class="arc-text text-3xl md:text-5xl font-bold text-red-700">Bienvenue au Simplon Coffee Craft</h1>
   </header>
 
@@ -53,24 +54,26 @@
 
   <!-- Présentation -->
   <section class="mt-12 flex flex-col md:flex-row items-center px-6 md:px-20 gap-8">
-    <img src="/chemin/vers/equipe.jpg" alt="L'équipe" class="w-full md:w-1/2 rounded shadow-lg">
+    <img src="equipe.jpg" alt="L'équipe" class="w-full md:w-1/2 rounded shadow-lg">
     <div class="md:w-1/2 text-lg text-slate-800">
-      <p>L’équipe de Simplon Coffee Craft vous accueille depuis 2013 dans le centre de Lens, dans une ambiance chaleureuse mêlant tradition et modernité. Notre passion pour le café se reflète dans chaque tasse, accompagnée de douceurs maison préparées avec soin.</p>
+      <p>L’équipe de Simplon Coffee Craft vous accueille avec le sourire depuis 2013, en plein cœur de Lens, dans un lieu pensé comme un cocon où il fait bon vivre. Ici, chaque détail a été imaginé pour créer une ambiance conviviale, mêlant la chaleur des traditions artisanales à une touche de modernité discrète mais élégante.
+        Notre amour pour le café ne se limite pas à une simple boisson : c’est une passion partagée, une expérience sensorielle que nous vous invitons à vivre. Chaque tasse est soigneusement préparée avec des grains de qualité, rigoureusement sélectionnés, fraîchement moulus et infusés avec justesse.
+        Pour accompagner votre pause café, nous vous proposons une sélection de gâteaux faits maison, élaborés avec des ingrédients simples et authentiques, dans le respect des saisons et de la gourmandise. Que vous veniez travailler, lire, discuter ou simplement vous détendre, Simplon Coffee Craft est votre refuge chaleureux pour savourer un moment de plaisir sincère.</p>
     </div>
   </section>
 
   <!-- 3 Articles avec modales -->
   <section class="mt-16 px-6 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
     <div class="relative group cursor-pointer" onclick="openModal('modal1')">
-      <img src="/chemin/cafe1.jpg" alt="Café de spécialité" class="rounded w-full h-64 object-cover">
+      <img src="café.jpg" alt="Café de spécialité" class="rounded w-full h-64 object-cover">
       <p class="absolute inset-0 flex items-center justify-center text-xl md:text-2xl font-bold text-white bg-orange-700 bg-opacity-50">Café de spécialité !</p>
     </div>
     <div class="relative group cursor-pointer" onclick="openModal('modal2')">
-      <img src="/chemin/cafe2.jpg" alt="Matériel" class="rounded w-full h-64 object-cover">
+      <img src="torréfacteur.jpg" alt="Matériel" class="rounded w-full h-64 object-cover">
       <p class="absolute inset-0 flex items-center justify-center text-xl md:text-2xl font-bold text-white bg-orange-700 bg-opacity-50">Matériel pour le café</p>
     </div>
     <div class="relative group cursor-pointer" onclick="openModal('modal3')">
-      <img src="/chemin/cafe3.jpg" alt="Autour du café" class="rounded w-full h-64 object-cover">
+      <img src="autourDuCafé.jpg" alt="Autour du café" class="rounded w-full h-64 object-cover">
       <p class="absolute inset-0 flex items-center justify-center text-xl md:text-2xl font-bold text-white bg-orange-700 bg-opacity-50">Autour du café</p>
     </div>
   </section>
@@ -108,29 +111,27 @@
   <!-- Avis clients -->
   <section class="mt-16 px-6 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-slate-800">
     <div>
-      <img src="/chemin/guillemets.png" alt="Citation" class="h-8 mb-2">
-      <p class="italic">Un endroit fabuleux, chaleureux et cosy. Le café est juste exceptionnel !<br><span class="font-bold">- Emma</span></p>
+      <p class="text-5xl leading-none text-orange-500">“</p>
+      <p class="italic -mt-2">Un endroit fabuleux, chaleureux et cosy. Le café est juste exceptionnel !<br><span class="font-bold">- Emma</span></p>
     </div>
     <div>
-      <img src="/chemin/guillemets.png" alt="Citation" class="h-8 mb-2">
-      <p class="italic">J’adore venir ici pour lire ou bosser. Toujours bien reçu !<br><span class="font-bold">- Karim</span></p>
+      <p class="text-5xl leading-none text-orange-500">“</p>
+      <p class="italic -mt-2">J’adore venir ici pour lire ou bosser. Toujours bien reçu !<br><span class="font-bold">- Karim</span></p>
     </div>
     <div>
-      <img src="/chemin/guillemets.png" alt="Citation" class="h-8 mb-2">
-      <p class="italic">Le meilleur spot café de Lens ! Je recommande vivement.<br><span class="font-bold">- Sophie</span></p>
+      <p class="text-5xl leading-none text-orange-500">“</p>
+      <p class="italic -mt-2">Le meilleur spot café de Lens ! Je recommande vivement.<br><span class="font-bold">- Sophie</span></p>
     </div>
   </section>
-
   <!-- Bande d’images collées -->
-  <section class="mt-20 overflow-x-auto">
-    <div class="flex space-x-0 w-max">
-      <img src="/chemin/image1.jpg" class="w-40 h-32 object-cover">
-      <img src="/chemin/image2.jpg" class="w-40 h-32 object-cover">
-      <img src="/chemin/image3.jpg" class="w-40 h-32 object-cover">
-      <img src="/chemin/image4.jpg" class="w-40 h-32 object-cover">
-      <img src="/chemin/image5.jpg" class="w-40 h-32 object-cover">
+  <section class="mt-20 w-full">
+    <div class="flex justify-center gap-0 overflow-hidden">
+      <img src="tasse.jpg" class="w-1/3 h-72 object-cover">
+      <img src="tasse.jpg" class="w-1/3 h-72 object-cover">
+      <img src="tasse.jpg" class="w-1/3 h-72 object-cover">
     </div>
   </section>
+  
 
   <!-- Newsletter et infos -->
   <section class="bg-orange-100 text-slate-900 py-12 mt-20 px-6 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -156,10 +157,18 @@
   <!-- Footer -->
   <footer class="bg-orange-200 text-center py-6 text-sm text-slate-800">
     <p>&copy; 2025 Simplon Coffee Craft</p>
-    <div class="mt-2 space-x-4">
-      <a href="#"><img src="/chemin/instagram.png" class="inline h-6"></a>
-      <a href="#"><img src="/chemin/facebook.png" class="inline h-6"></a>
-    </div>
+    <div class="mt-2 space-x-4 flex justify-center">
+  <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+    <svg class="inline h-6 w-6 text-slate-800 hover:text-orange-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z"/>
+    </svg>
+  </a>
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+    <svg class="inline h-6 w-6 text-slate-800 hover:text-orange-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.5 9.5V7.75c0-.69.56-1.25 1.25-1.25H17V3.5h-2.25A3.75 3.75 0 0 0 11 7.25V9.5H9v3h2v8h3v-8h2.25l.25-3H14.5Z"/>
+    </svg>
+  </a>
+</div>
   </footer>
 
   <script>
