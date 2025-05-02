@@ -1,329 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/output.css">
+    <!-- <link rel="stylesheet" href="./src/output.css"> -->
     <title>Menus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1>Adil</h1>
+<body class="bg-beige-50 text-brown-900 font-sans">
 
-    <h1>Memo Tailwind CSS</h1>
-
-    <!-----------------------------------------------
-    Section pour le formatage de texte
-    ------------------------------------------------>
-    <section>
-        <h2>Formater du texte</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Color</td>
-                    <td>text-red-50&nbsp;...&nbsp;text-red-950</td>
-                </tr>
-                <tr>
-                    <td>font-family</td>
-                    <td>font-sans,&nbsp;fons-serif,&nbsp;font-mono</td>
-                </tr>
-                <tr>
-                    <td>font-size</td>
-                    <td>text-xs,&nbsp;text-sm,&nbsp;text-base,&nbsp;text-lg,&nbsp;text-xl</td>
-                </tr>
-                <tr>
-                    <td>font-weight</td>
-                    <td>font-light,&nbsp;font-normal,&nbsp;font-bold</td>
-                </tr>
-              <tr>
-                    <td>font-style</td>
-                    <td>italic,&nbsp;not-italic</td>
-                </tr>
-              <tr>
-                    <td>letter-spacing</td>
-                    <td>tracking-tighter,&nbsp;tracking-normal,&nbsp;tracking-widest</td>
-                </tr>
-              <tr>
-                    <td>text-decoration</td>
-                    <td>underline,&nbsp;overline,&nbsp;line-through,&nbsp;no-underline</td>
-                </tr>
-              <tr>
-                    <td>text-align</td>
-                    <td>text-left,&nbsp;text-center,&nbsp;text-justify,&nbsp;text-right</td>
-                </tr>
-              <tr>
-                    <td>text-transform</td>
-                    <td>uppercase,&nbsp;lower-case,&nbsp;capitalize,&nbsp;normal-case</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-brown-800">CoffeeCraft</h1>
+        <nav class="space-x-4 text-sm text-brown-600">
+          <a href="menus.html" class="hover:text-brown-500">Nos Menus</a>
+          <a href="ateliers.html" class="hover:text-brown-500 font-semibold text-brown-800">Ateliers</a>
+        </nav>
+      </div>
+    </header>
+  
+    <!-- Section: Menu des boissons -->
+    <section class="py-12 px-4 bg-beige-100">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10 text-brown-800">Menu des Boissons</h2>
+  
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- 1 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Espresso.jpg.jpg" alt="Espresso" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Espresso</h3>
+            <p class="text-sm text-brown-600">Un café court, intense et aromatique.</p>
+          </div>
+  
+          <!-- 2 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Cappuccino.jpg.jpg" alt="Cappuccino" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Cappuccino</h3>
+            <p class="text-sm text-brown-600">Espresso avec lait chaud et mousse légère.</p>
+          </div>
+  
+          <!-- 3 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Mocha.jpg.jpg" alt="Mocha" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Mocha</h3>
+            <p class="text-sm text-brown-600">Mélange délicieux de café, lait et chocolat.</p>
+          </div>
+  
+          <!-- 4 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Americano.jpg.jpg" alt="Americano" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Americano</h3>
+            <p class="text-sm text-brown-600">Espresso allongé avec de l’eau chaude.</p>
+          </div>
+  
+          <!-- 5 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Cortado.jpg.jpg" alt="Cortado" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Cortado</h3>
+            <p class="text-sm text-brown-600">Espresso avec une touche de lait chaud.</p>
+          </div>
+  
+          <!-- 6 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Green-Tea.jpg.jpg" alt="Thé Vert" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Thé Vert</h3>
+            <p class="text-sm text-brown-600">Infusion délicate riche en antioxydants.</p>
+          </div>
+  
+          <!-- 7 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/EarlGrey-Tea.jpg.jpg" alt="Earl Grey" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Thé Earl Grey</h3>
+            <p class="text-sm text-brown-600">Thé noir parfumé à la bergamote.</p>
+          </div>
+  
+          <!-- 8 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Chamomile-Tea.jpg.jpg" alt="Camomille" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Thé Camomille</h3>
+            <p class="text-sm text-brown-600">Infusion relaxante, idéale pour le soir.</p>
+          </div>
+  
+          <!-- 9 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Orange-Juice.jpg.jpg" alt="Jus d’Orange" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Jus d’Orange</h3>
+            <p class="text-sm text-brown-600">Jus frais pressé, riche en vitamine C.</p>
+          </div>
+  
+          <!-- 10 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/Cranberry-Juice.jpg.jpg" alt="Jus de Canneberge" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Jus de Canneberge</h3>
+            <p class="text-sm text-brown-600">Goût fruité et légèrement acidulé.</p>
+          </div>
+  
+          <!-- 11 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/matcha-latte.jpg.jpg" alt="Matcha Latte" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Matcha Latte</h3>
+            <p class="text-sm text-brown-600">Boisson japonaise à base de thé vert fouetté et lait chaud.</p>
+          </div>
+  
+          <!-- 12 -->
+          <div class="bg-white rounded-lg shadow p-4">
+            <img src="assets/images/chocolat-chaud.jpg.jpg" alt="Chocolat Chaud" class="rounded-md h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-lg text-brown-800">Chocolat Chaud</h3>
+            <p class="text-sm text-brown-600">Un chocolat chaud onctueux avec lait entier et cacao pur.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-----------------------------------------------
-    Section pour le formatage d'une boite
-    ------------------------------------------------>
-    <section>
-        <h2>Formater une boite</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>background-color</td>
-                    <td>bg-red-50&nbsp;...&nbsp;bg-red-950</td>
-                </tr>
-                <tr>
-                   <td>width</td>
-                    <td>w-4,&nbsp;w-1/2,&nbsp;w-full</td>
-                </tr>
-                <tr>
-                    <td>height</td>
-                    <td>h-4,&nbsp;h-5/6,&nbsp;h-screen</td>
-                </tr>
-                <tr>
-                     <td>background-image&nbsp;(image de fond)</td>
-                    <td>bg-[url('img/img.jpg')]</td>
-                </tr>
-              <tr>
-                    <td>background-image&nbsp;(dégradé)</td>
-                    <td>bg-gradient-to-r from-cyan-500 to-blue-500</td>
-                </tr>
-              <tr>
-                     <td>margin</td>
-                    <td>m-4, m-auto, mt-3, mr-3, mb-3, ml-3</td>
-                </tr>
-              <tr>
-                     <td>padding</td>
-                    <td>p-4, pt-3, pr-3, pb-3, pl-3</td>
-                </tr>
-              <tr>
-                     <td>border</td>
-                    <td>boder-4, border-solid, border-green-500</td>
-                </tr>
-              <tr>
-                     <td>border-radius</td>
-                    <td>rounded-2xl, rounded-full</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    
-    <!-----------------------------------------------
-    Section pour CSS Grid
-    ------------------------------------------------>
-    <section>
-        <h2>Mettre en page avec Grid</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>display : grid;</td>
-                    <td>grid</td>
-                </tr>
-                <tr>
-                   <td>grid-template-columns</td>
-                    <td>grid-cols-2, grid-cols-[200px_1fr]</td>
-                </tr>
-                <tr>
-                    <td>grid-template-rows</td>
-                    <td>grid-rows-2, grid-rows-[200px_1fr]</td>
-                </tr>
-                <tr>
-                     <td>gap</td>
-                    <td>gap-4, gap-x-4, gap-y-4</td>
-                </tr>
-               <tr>
-                    <td>grid-column-start</td>
-                    <td>col-start-1</td>
-                </tr>
-              <tr>
-                    <td>grid-column-end</td>
-                    <td>col-end-3</td>
-                </tr>
-              <tr>
-                    <td>grid-column : span 3;</td>
-                    <td>col-span-3</td>
-                </tr>
-              <tr>
-                    <td>grid-row-start</td>
-                    <td>row-start-1</td>
-                </tr>
-              <tr>
-                    <td>grid-row-end</td>
-                    <td>row-end-3</td>
-                </tr>
-              <tr>
-                    <td>grid-row : span 2;</td>
-                    <td>row-span-2</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    
-    <!-----------------------------------------------
-    Section media queries
-    ------------------------------------------------>
-    <section>
-        <h2>Media queries</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>@media (min-width: X)</td>
-                  <td>sm:(640px), md:(768px), </br>lg:(1024px), xl:(1280px), 2xl:(1536px)</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    
-    <!-----------------------------------------------
-    Section Mise en page avec Flexbox
-    ------------------------------------------------>
-    <section>
-        <h2>Mise en page avec Flexbox</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>display: flex;</td>
-                    <td>flex</td>
-                </tr><tr>
-                    <td>flex-direction</td>
-                    <td>flex-row(-reverse), flex-col(-reverse)</td>
-                </tr><tr>
-                    <td>flex-wrap</td>
-                    <td>flex-nowrap, flex-wrap</td>
-                </tr><tr>
-                    <td>justify-content</td>
-                    <td>justify-start, justify-end, justify-center, justify-between, justify-around, justivy-evenly</td>
-                </tr><tr>
-                    <td>align-items</td>
-                    <td>items-start, items-end, items-center, items-stretch</td>
-                </tr><tr>
-                    <td>align-self</td>
-                    <td>self-start, self-end, self-center, self-stretch</td>
-                </tr><tr>
-                    <td>order</td>
-                    <td>order-1, order-2, order-3</td>
-                </tr><tr>
-                    <td>flex-grow</td>
-                    <td>grow, grow-0</td>
-                </tr><tr>
-                    <td>flex-basis</td>
-                    <td>basis-1/2, basis-1/4</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <!-----------------------------------------------
-    Section Effets visuels
-    ------------------------------------------------>
-    <section>
-        <h2>Les effets visuels</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>box-shadow</td>
-                    <td>shadow-sm, shadow, shadow-2xl (shadow-red-800, shadow-[#aa00aa])</td>
-                </tr><tr>
-                    <td>opacity</td>
-                    <td>opacity-0, opacity-100</td>
-                </tr><tr>
-                    <td>transform : scale(1.5);</td>
-                    <td>scale-150</td>
-                </tr><tr>
-                    <td>transform : rotate(45deg)</td>
-                    <td>rotate-45</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <!-----------------------------------------------
-    Section Mise en page
-    ------------------------------------------------>
-    <section>
-        <h2>Mise en page</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>visibility</td>
-                    <td>visible, invisible</td>
-                </tr><tr>
-                    <td>position</td>
-                    <td>absolute, fixed, sticky [top-0,left-0...]</td>
-                </tr><tr>
-                    <td>float</td>
-                    <td>float-left, float-right</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <!-----------------------------------------------
-    Section Evenements
-    ------------------------------------------------>
-    <section>
-        <h2>Les evenements</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Proprietes CSS</th>
-                    <th>Classes utilitaires</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                    <td>:hover</td>
-                    <td>hover:</td>
-                </tr><tr>
-                    <td>:focus</td>
-                    <td>focus:</td>
-                </tr><tr>
-                    <td>:active</td>
-                    <td>active:</td>
-                </tr>
-              <tr>
-                    <td>::placeholrder</td>
-                    <td>placeholder:</td>
-              </tr>
-            </tbody>
-        </table>
-    </section>
-
-</body>
+  
+    <!-- Footer -->
+    <footer class="bg-brown-900 text-white py-6 text-center text-sm mt-12">
+      <p>&copy; 2025 CoffeeCraft. Tous droits réservés.</p>
+    </footer>
+  
+  </body>
 </html>
